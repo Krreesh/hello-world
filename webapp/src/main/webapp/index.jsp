@@ -1,17 +1,33 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
  pageEncoding="ISO-8859-1"%>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Form Processing</title>
+<title>Reading Checkbox Data</title>
 </head>
 <body>
- <form action="GetFormProcess.jsp" method="GET">
-  UserName: <input type="text" name="username"> <br /><br/>
-  Password: <input type="text" name="password" ><br/><br/> <input type="submit"
-   value="Submit" />
- </form>
+ <h1>Reading Checkbox Data filled in form</h1>
+ <ul>
+  <li><p>
+    <b>Maths Checkbox:</b>
+    <%=request.getParameter("Maths")%>
+   </p></li>
+  <li><p>
+    <b>Physics Checkbox:</b>
+    <%=request.getParameter("Physics")%>
+   </p></li>
+  <li><p>
+    <b>Chemistry Checkbox :</b>
+    <%=request.getParameter("Chemistry")%>
+   </p></li>
+  <li><p>
+    <b>English Checkbox:</b>
+    <%=request.getParameter("English")%>
+   </p></li>
+  <li><p>
+    <b>Computers Checkbox:</b>
+    <%=request.getParameter("Computers")%>
+   </p></li>
+ </ul>
 </body>
 </html>
