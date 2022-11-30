@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
  pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>GET using URL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Form Processing</title>
 </head>
 <body>
- <h1>Form Processing</h1>
- <p>
-  <b>UserName :</b>
-  <%=request.getParameter("username")%>
-  <br /> <b>Password :</b>
-  <%=request.getParameter("password")%>
- </p>
+ <form action="GetFormProcess.jsp" method="GET">
+  UserName: <input type="text" name="username"> <br /><br/>
+  Password: <input type="text" name="password" ><br/><br/> <input type="submit"
+   value="Submit" />
+ </form>
 </body>
 </html>
