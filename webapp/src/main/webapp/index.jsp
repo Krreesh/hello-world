@@ -3,31 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Reading Checkbox Data</title>
+<title>Processing Checkbox data</title>
 </head>
 <body>
- <h1>Reading Checkbox Data filled in form</h1>
- <ul>
-  <li><p>
-    <b>Maths Checkbox:</b>
-    <%=request.getParameter("Maths")%>
-   </p></li>
-  <li><p>
-    <b>Physics Checkbox:</b>
-    <%=request.getParameter("Physics")%>
-   </p></li>
-  <li><p>
-    <b>Chemistry Checkbox :</b>
-    <%=request.getParameter("Chemistry")%>
-   </p></li>
-  <li><p>
-    <b>English Checkbox:</b>
-    <%=request.getParameter("English")%>
-   </p></li>
-  <li><p>
-    <b>Computers Checkbox:</b>
-    <%=request.getParameter("Computers")%>
-   </p></li>
- </ul>
+ <form action="checkboxProcess.jsp" method="POST" target="_blank">
+  <input type="checkbox" name="Maths" checked="checked" /> Maths</br> <input
+   type="checkbox" name="Physics" /> Physics</br> <input type="checkbox"
+   name="Chemistry" /> Chemistry</br> <input type="checkbox" name="English"
+   checked="checked" /> English</br> <input type="checkbox" name="Computers"
+   checked="checked" /> Computers</br> <input type="submit"
+   value="Select Subject" />
+ </form>
 </body>
 </html>
