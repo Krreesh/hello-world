@@ -3,7 +3,7 @@
   <title>Book Query</title>
 </head>
 <body>
-  <h1>Cognizant .AI</h1>
+  <h1>CODVO.AI</h1>
   <h3>Choose Author(s):</h3>
   <form method="get">
     <input type="checkbox" name="author" value="Tan Ah Teck">Tan
